@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<main>
+    <div id="user">
+        Name: 
+    </div>
+
+    <!-- index page elements -->
+    <div id="index" class="text-center">
+        <h1 class="display-3">localStorage Mini App</h1>
+        <p>This application should store its data using localStorage only, and should not connect to any external APIs, backends, databases etc.</p>
+        <button id="signUpBtn" class="btn btn-primary">Sign Up</button>
+        <button id="logInBtn" class="btn btn-primary">Log in</button>
+    </div> <!-- end of home --> 
+
+    <div id="sign">
+        <h1 class="text-center display-3">Sign Up Page</h1>
+
+        <hr style="margin-bottom: 40px;"/>
+
+        <form id="form0">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="">Name</label>
+                        <input id="name" type="text" class="form-control" placeholder="First name" required>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="">Last Name</label>
+                        <input id="last-name" type="text" class="form-control" placeholder="Last name" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="">Email address</label>
+                <input id="email" type="email" class="form-control" placeholder="Enter email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="">Password</label>
+                <input id="password" type="password" class="form-control" placeholder="Password" required>
+            </div>
+
+            <div class="form-group form-check">
+                <input id="checkbox" type="checkbox" class="form-check-input" required>
+                <label class="form-check-label" for="">
+                    I agree to the <a href="">Terms of Use</a>
+                </label>
+            </div>
+            <button type="submit" id="submit-btn" class="btn btn-primary">Submit</button>
+        </form>
+    </div> <!-- end of sign -->
+
+    <div id="log">
+        <h1 class="text-center display-3">Log In Page</h1>
+
+        <hr style="margin-bottom: 40px;"/>
+
+        <form id="form1">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="">Email address</label>
+                        <input type="email" id="emailLogIn" class="form-control" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" id="passWLogIn" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" id="submitLogIn" class="btn btn-primary">Submit</button>
+        </form>
+    </div> <!-- end of log -->
+    <!-- end of index page elements -->
+
+    <!-- dashboard page elements -->
+    <div id="dashboard">
+        <h1 class="display-3 text-center">Dashboard</h1>
+
+        <hr />
+
+        <div id="listsContainer"></div>
+
+        <hr />
+
+        <button id="createList" class="btn btn-warning">CREATE NEW TO-DO-LIST</button>
+    </div>
+    <!-- end of dashboard page elements -->
+
+    <div id="signOut">
+        <button type="submit" id="sign-out-btn" class="btn btn-primary">Sign Out</button>
+    </div>
+</main>
+
+</body>
+</html>
